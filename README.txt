@@ -16,6 +16,7 @@ arduino SDK: 1.0.5
 /atmega/atmega_OLED_v1
 
 # esp8266
+ESP8266 Arduino core : 2.2.0
 arduino SDK: 1.6.5
 esp8266/esp8266_UART_sleep_v1
 

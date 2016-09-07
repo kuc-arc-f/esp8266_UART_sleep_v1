@@ -44,6 +44,7 @@ uint32_t mTimerDisp;
 //
 void setup()   {                
   Serial.begin(9600);
+  Serial.println("#Start-setup");
   //
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   display.display();
@@ -76,7 +77,7 @@ void loop() {
     float h = dht.readHumidity();
     float t = dht.readTemperature();
     if (isnan(h) || isnan(t) ) {
-        // Serial.println("Failed to read from DHT sensor!");
+        Serial.println("Failed to read from DHT sensor!");
         return;
     }   
     int iTemp=int(t);
